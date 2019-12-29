@@ -1,0 +1,108 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:background="#30A1FF"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="200sp"
+        android:orientation="vertical">
+        <LinearLayout
+            android:layout_width="110sp"
+            android:layout_height="110sp"
+            android:background="@drawable/bundar_putih"
+            android:gravity="center">
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:src="@drawable/ic_people_black_24dp"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_gravity="center"
+                android:id="@+id/photo"/>
+        </LinearLayout>
+        <TextView
+            android:id="@+id/sapa"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10sp"
+            android:text="Hi"
+            android:textStyle="bold"
+            android:textSize="15sp"
+            android:textColor="#f0f0f0"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/test"
+        android:background="@drawable/bulat_putih"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_gravity="center_horizontal"
+        android:layout_margin="20sp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/name"
+            android:text="Name: NAME HERE"
+            android:textSize="22sp"
+            android:textColor="#30A1FF"
+            android:textStyle="bold"
+            android:layout_gravity="center"
+            android:layout_margin="10sp"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/email"
+            android:text="Email: EMAIL HERE"
+            android:textSize="18sp"
+            android:textColor="#30A1FF"
+            android:layout_gravity="center"
+            android:layout_marginBottom="10sp"/>
+        <LinearLayout
+            android:layout_width="20sp"
+            android:layout_height="20sp"
+            android:background="@drawable/bulat_biru"
+            android:layout_marginEnd="5sp"
+            android:layout_marginBottom="5sp"
+            android:layout_gravity="end"
+            android:gravity="center">
+            <ImageView
+                android:id="@+id/to_Edit"
+                android:src="@drawable/ic_edit_black_24dp"
+                android:layout_width="15sp"
+                android:layout_height="15sp"/>
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/bt_Logout"
+        android:background="@drawable/tombol_logout"
+        android:layout_marginStart="20sp"
+        android:layout_marginEnd="20sp"
+        android:layout_below="@+id/test"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Log Out"
+        android:textAllCaps="false"
+        android:textStyle="bold"
+        android:textSize="18sp"
+        android:textColor="#fff"/>
+
+    <Button
+        android:id="@+id/bt_ChaPass"
+        android:background="@drawable/tombol_regis"
+        android:layout_marginStart="20sp"
+        android:layout_marginEnd="20sp"
+        android:layout_marginTop="20sp"
+        android:layout_below="@+id/test"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Change Password"
+        android:textAllCaps="false"
+        android:textStyle="bold"
+        android:textSize="18sp"
+        android:textColor="#fff"/>
+
+</LinearLayout>

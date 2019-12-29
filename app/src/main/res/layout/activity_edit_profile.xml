@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".EditProfileActivity"
+    android:orientation="vertical">
+    <LinearLayout
+        android:background="#30A1FF"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="200sp"
+        android:orientation="vertical">
+        <LinearLayout
+            android:layout_width="110sp"
+            android:layout_height="110sp"
+            android:background="@drawable/bundar_putih"
+            android:gravity="center">
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:src="@drawable/ic_people_black_24dp"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_gravity="center"
+                android:id="@+id/profile_photo"/>
+        </LinearLayout>
+        <TextView
+            android:id="@+id/ed_photo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="EDIT PHOTO"
+            android:layout_marginTop="10sp"
+            android:textStyle="bold"
+            android:textSize="15sp"
+            android:textColor="#f0f0f0"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="20sp"
+        android:orientation="vertical">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Edit your Account"
+            android:textStyle="bold"
+            android:layout_gravity="center"
+            android:textSize="20dp"/>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5sp"
+            android:hint="Nama"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/et_ed_Name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <Button
+            android:id="@+id/bt_Edit"
+            android:background="@drawable/tombol_regis"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10sp"
+            android:text="Edit Profile"
+            android:textAllCaps="false"
+            android:textStyle="bold"
+            android:textSize="18sp"
+            android:textColor="#fff"/>
+
+    </LinearLayout>
+
+</LinearLayout>

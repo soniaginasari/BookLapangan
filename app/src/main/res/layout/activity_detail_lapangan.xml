@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+
+    tools:context=".DetailLapanganActivity">
+    <RelativeLayout
+        android:id="@+id/rel1"
+        android:background="#444F63"
+        android:layout_marginTop="5dp"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="288dp">
+
+        <ImageView
+            android:layout_centerHorizontal="true"
+            android:id="@+id/imgw"
+            android:layout_width="380dp"
+            android:layout_height="380dp"
+            />
+        <TextView
+            android:id="@+id/namaw"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:gravity="center"
+            android:layout_marginLeft="15dp"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:background="#DDD9D9"
+            android:textColor="#000"
+            android:text="Bengkel Auto 2000"
+            android:textSize="30sp"/>
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/alamatw"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="30dp"
+        android:layout_below="@id/rel1"
+        android:text="Gatsu Tengah"
+        android:textColor="#000"
+        android:textSize="25sp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <ImageView
+        android:id="@+id/callw"
+        android:layout_width="60dp"
+        android:layout_height="44dp"
+        android:layout_below="@id/alamatw"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="20dp"
+        android:src="@drawable/ic_contact_phone_black_24dp" />
+    <TextView
+        android:layout_toRightOf="@+id/callw"
+        android:id="@+id/telpw"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="20dp"
+        android:layout_below="@id/alamatw"
+        android:text="+62 878797667"
+        android:textColor="#000"
+        android:textSize="25sp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <Button
+        android:id="@+id/edit_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@id/callw"
+        android:text="Edit"
+        android:onClick="Edit"
+        android:layout_marginBottom="20dp"
+        android:textColor="#fff"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/hapus_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@id/edit_btn"
+        android:text="Hapus"
+        android:onClick="Hapus"
+        android:layout_marginBottom="20dp"
+        android:textColor="#fff"
+        android:textStyle="bold" />
+
+</RelativeLayout>

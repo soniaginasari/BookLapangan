@@ -1,0 +1,22 @@
+<resources>
+    <string name="app_name">Booking Lapangan</string>
+    <string name="disclaimer">Dengan mendaftar anda telah setuju dengan kebijakan dan ketentuan aplikasi kami.</string>
+    <string name="sudah_regis">Sudah punya akun?</string>
+    <string name="belum_regis">Belum terdaftar?</string>
+    <string name="title_activity_main2">Main2Activity</string>
+    <string name="title_home">Home</string>
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_profile">Profile</string>
+    <string name="title_activity_main">MainActivity</string>
+
+    <string-array name="Kategori">
+        <item>Kategori</item>
+        <item>sepak bola</item>
+        <item>renang</item>
+        <item>basket</item>
+        <item>bulutangkis</item>
+        <item>futsal</item>
+        <item>tenis</item>
+
+    </string-array>
+</resources>
