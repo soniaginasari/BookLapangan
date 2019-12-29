@@ -67,13 +67,22 @@
         android:layout_height="wrap_content" />
 
     <Button
-        android:id="@+id/edit_btn"
+        android:id="@+id/sewa_btn"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_alignParentRight="true"
         android:layout_below="@id/callw"
         android:text="Edit"
-        android:onClick="Edit"
+        android:layout_marginBottom="20dp"
+        android:textColor="#fff"
+        android:textStyle="bold" />
+    <Button
+        android:id="@+id/edit_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@id/sewa_btn"
+        android:text="Edit"
         android:layout_marginBottom="20dp"
         android:textColor="#fff"
         android:textStyle="bold" />
@@ -85,7 +94,6 @@
         android:layout_alignParentRight="true"
         android:layout_below="@id/edit_btn"
         android:text="Hapus"
-        android:onClick="Hapus"
         android:layout_marginBottom="20dp"
         android:textColor="#fff"
         android:textStyle="bold" />

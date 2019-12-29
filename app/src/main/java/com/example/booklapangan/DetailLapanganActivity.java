@@ -35,7 +35,7 @@ public class DetailLapanganActivity extends AppCompatActivity {
     String pimgg;
     String pnamaa, pid, pno_hp, palamatt;
     String id_user, pid_user;
-    Button edit, hapus;
+    Button edit, hapus, sewa;
     Preferences sharedPrefManager;
     ProgressDialog loading;
     Context mContext;
@@ -52,6 +52,7 @@ public class DetailLapanganActivity extends AppCompatActivity {
         talamat = (TextView) findViewById(R.id.alamatw);
         edit = findViewById(R.id.edit_btn);
         hapus = findViewById(R.id.hapus_btn);
+        sewa = findViewById(R.id.sewa_btn);
 
         pimgg = getIntent().getStringExtra("image");
         pnamaa = getIntent().getStringExtra("nama");
@@ -68,6 +69,19 @@ public class DetailLapanganActivity extends AppCompatActivity {
         id_user = sharedPrefManager.getSPId();
         mContext = this;
         mApiService = UtilsApi.getAPIService();
+
+        sewa.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(DetailLapanganActivity.this, SewaActivity.class);
+                intent.putExtra("nama", pnamaa);
+                intent.putExtra("alamat", palamatt);
+                intent.putExtra("no_hp", pno_hp);
+                intent.putExtra("id", pid);
+                DetailLapanganActivity.this.startActivity(intent);
+
+            }
+        });
 
         if (id_user.equalsIgnoreCase(pid_user)) {
             edit.setVisibility(View.VISIBLE);
